@@ -9,6 +9,8 @@ Burger McKing's é um site de fast food fictício muito famoso, desenvolvido uti
 - **Localização das Lojas**: Inclui um mapa interativo para que os clientes encontrem a loja mais próxima.
 - **Área do Cliente**: Oferece um espaço onde os clientes podem criar contas, visualizar históricos de pedidos e gerenciar suas informações pessoais.
 
+**OBS**: Lembrando que essas funcionalidades são fictícias. O foco está na integração dos dados variáveis que usei para mostrar a habilidade com o Django.
+
 ## Tecnologias Utilizadas
 
 - **Django**: Framework principal para o desenvolvimento do backend, gerenciamento de banco de dados e lógica de negócios.
