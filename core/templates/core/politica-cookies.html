@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Cookies - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/politica-cookies.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Política de Cookies</h1>
+          <p class="promo-text">Entenda como utilizamos cookies em nosso site</p>
+          <p>Saiba mais sobre como e por que usamos cookies para melhorar sua experiência</p>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Cookies" class="hero-image" />
+      </section>
+
+      <section class="policy-section">
+        <div class="container">
+          <h2>Nossa Política de Cookies</h2>
+          <div class="policy-content">
+            <div class="policy-item">
+              <i class="fas fa-cookie-bite"></i>
+              <h3>O que são Cookies?</h3>
+              <p>Cookies são pequenos arquivos de texto armazenados no seu dispositivo quando você visita nosso site.</p>
+            </div>
+            <div class="policy-item">
+              <i class="fas fa-cogs"></i>
+              <h3>Como Usamos</h3>
+              <p>Utilizamos cookies para melhorar sua experiência de navegação e personalizar conteúdos.</p>
+            </div>
+            <div class="policy-item">
+              <i class="fas fa-user-shield"></i>
+              <h3>Sua Privacidade</h3>
+              <p>Respeitamos sua privacidade e você pode controlar o uso de cookies em seu navegador.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details-section">
+        <div class="container">
+          <h2>Detalhes sobre Cookies</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h3>Tipos de Cookies <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Utilizamos cookies essenciais, de desempenho, funcionais e de publicidade para diferentes propósitos.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3>Gerenciamento de Cookies <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Você pode gerenciar suas preferências de cookies através das configurações do seu navegador.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3>Cookies de Terceiros <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Alguns cookies podem ser definidos por terceiros para análise e publicidade. Saiba mais sobre como eles são usados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <h2>Dúvidas sobre Cookies?</h2>
+          <p>Entre em contato com nossa equipe de privacidade:</p>
+          <a href="mailto:privacidade@mcking.com" class="cta-button">Enviar E-mail</a>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

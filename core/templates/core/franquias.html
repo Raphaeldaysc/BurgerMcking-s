@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franquias - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/franquias.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Franquias Burger McKing's</h1>
+          <p class="promo-text">Seja parte do sucesso!</p>
+          <p>Junte-se à família Burger McKing's e abra sua própria franquia de sucesso.</p>
+          <a href="#oportunidades" class="cta-button">Ver Oportunidades</a>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Franquia Burger McKing's" class="hero-image" />
+      </section>
+
+      <section id="oportunidades" class="secondary-section">
+        <div class="container">
+          <h2>Oportunidades de Franquia</h2>
+          <p>Explore nossas opções de franquia e comece seu próprio negócio de sucesso.</p>
+          <div class="franchise-opportunities">
+            <div class="franchise-card">
+              <i class="fas fa-store"></i>
+              <h3>Loja Tradicional</h3>
+              <p>Abra uma loja completa em locais de alto fluxo</p>
+              <a href="#" class="cta-button">Saiba Mais</a>
+            </div>
+            <div class="franchise-card">
+              <i class="fas fa-shopping-cart"></i>
+              <h3>Quiosque</h3>
+              <p>Opção compacta para shoppings e áreas comerciais</p>
+              <a href="#" class="cta-button">Saiba Mais</a>
+            </div>
+            <div class="franchise-card">
+              <i class="fas fa-car"></i>
+              <h3>Drive-Thru</h3>
+              <p>Atenda clientes com rapidez e praticidade</p>
+              <a href="#" class="cta-button">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section">
+        <div class="container">
+          <h2>Benefícios de ser um franqueado</h2>
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <i class="fas fa-trademark"></i>
+              <span>Marca reconhecida mundialmente</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-hands-helping"></i>
+              <span>Suporte contínuo</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-chart-line"></i>
+              <span>Modelo de negócio comprovado</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-bullhorn"></i>
+              <span>Marketing nacional</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-truck"></i>
+              <span>Logística eficiente</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Treinamento completo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos franqueados dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="{{franchises.img.url}}" alt="{{franchises.nome}}" class="testimonial-image">
+              <p>"Ser franqueado e cliente do Burger McKing’s mudou minha vida. O suporte e o reconhecimento da marca são incomparáveis! O McKing Burger é suculento e saboroso, com ingredientes frescos e um molho especial delicioso. As batatas fritas são crocantes e bem temperadas, complementando perfeitamente qualquer refeição. O ambiente é acolhedor e moderno, e o serviço é rápido e eficiente. Além disso, o Burger McKing’s oferece opções vegetarianas e sobremesas irresistíveis, como o sundae de caramelo. Em resumo, é uma excelente escolha para quem busca uma refeição rápida, saborosa e satisfatória."</p>
+              <p class="testimonial-name">- {{franchises.nome}}, Franqueado há 5 anos</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+
+      <section class="franchise-process">
+        <div class="container">
+          <h2>Processo de Franquia</h2>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h3>Candidatura</h3>
+              <p>Preencha o formulário de interesse</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h3>Avaliação</h3>
+              <p>Análise do perfil e capacidade financeira</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h3>Treinamento</h3>
+              <p>Programa intensivo de capacitação</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h3>Inauguração</h3>
+              <p>Abertura da sua franquia Burger McKing's</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Qual é o investimento inicial?</h3>
+            <p>O investimento varia de acordo com o modelo de franquia escolhido e a localização. Entre em contato para mais detalhes.</p>
+          </div>
+          <!-- Adicionar mais perguntas e respostas aqui -->
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

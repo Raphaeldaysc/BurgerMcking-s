@@ -1,0 +1,118 @@
+/* Estilos específicos para a página do App McKing's */
+
+.app-download {
+    margin-top: 20px;
+}
+
+.app-download img {
+    height: 40px;
+    margin: 0 10px 10px 0;
+}
+
+.features-section {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+}
+
+.feature-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.how-to-use {
+    padding: 60px 0;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.step {
+    text-align: center;
+    width: 200px;
+}
+
+.step-number {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.testimonials-section {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+}
+
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq-item {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .feature-item, .step {
+        width: 100%;
+        max-width: 300px;
+    }
+}

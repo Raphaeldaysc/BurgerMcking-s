@@ -1,0 +1,115 @@
+/* Estilos específicos para a página de Delivery */
+
+.order-section {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+}
+
+.order-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.step {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.step-number {
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.delivery-options {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.options-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.option-item {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.option-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.option-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.delivery-map {
+    padding: 60px 0;
+    background-color: var(--secondary-color);
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.faq-item {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .step, .option-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}

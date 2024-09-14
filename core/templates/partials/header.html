@@ -1,0 +1,16 @@
+{% load static %}
+<header>
+      <nav>
+        <div class="logo">
+          <img src="{% static "assets/th.png" %}" alt="Burger McKing's Logo" height="50" />
+        </div>
+        <ul>
+          <li><a href="{% url "index" %}">Início</a></li>
+          <li><a href="{% url "cupons" %}">Cupons</a></li>
+          <li><a href="{% url "cardapio" %}">Cardápio</a></li>
+          <li><a href="{% url "app" %}">App McKing's</a></li>
+          <li><a href="{% url "clube" %}">Clube McKing's</a></li>
+          <li><a href="{% url "dlv" %}">Delivery</a></li>
+        </ul>
+      </nav>
+    </header>

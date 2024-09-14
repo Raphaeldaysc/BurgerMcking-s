@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhe Conosco - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/trabalhe-conosco.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Trabalhe Conosco</h1>
+          <p class="promo-text">Faça parte da nossa equipe real!</p>
+          <p>Junte-se à família Burger McKing's e ajude-nos a servir os melhores hambúrgueres do mundo.</p>
+          <a href="#vagas" class="cta-button">Ver Oportunidades</a>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Trabalhe Conosco" class="hero-image" />
+      </section>
+
+      <section id="vagas" class="secondary-section">
+        <div class="container">
+          <h2>Oportunidades de Carreira</h2>
+          <p>Explore nossas vagas disponíveis e comece sua jornada conosco.</p>
+          <div class="job-opportunities">
+            <div class="job-card">
+              <i class="fas fa-utensils"></i>
+              <h3>Atendimento</h3>
+              <p>Seja a primeira impressão dos nossos clientes</p>
+              <a href="#" class="cta-button">Candidatar-se</a>
+            </div>
+            <div class="job-card">
+              <i class="fas fa-hamburger"></i>
+              <h3>Cozinha</h3>
+              <p>Prepare os melhores hambúrgueres do mundo</p>
+              <a href="#" class="cta-button">Candidatar-se</a>
+            </div>
+            <div class="job-card">
+              <i class="fas fa-chart-line"></i>
+              <h3>Gerência</h3>
+              <p>Lidere nossas equipes para o sucesso</p>
+              <a href="#" class="cta-button">Candidatar-se</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section">
+        <div class="container">
+          <h2>Benefícios de trabalhar conosco</h2>
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Oportunidades de crescimento</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-medkit"></i>
+              <span>Plano de saúde</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-utensils"></i>
+              <span>Refeições no local</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-clock"></i>
+              <span>Horários flexíveis</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-book"></i>
+              <span>Treinamento contínuo</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-percentage"></i>
+              <span>Descontos em produtos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos colaboradores dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="{{staff.img.url}}" alt="{{staff.nome}}" class="testimonial-image">
+              <p>"Trabalhar no Burger McKing's me proporcionou crescimento profissional e pessoal. O ambiente é incrível!"</p>
+              <p class="testimonial-name">- {{staff.nome}}, {{staff.cargo}}</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+
+      <section class="career-development">
+        <div class="container">
+          <h2>Desenvolvimento de Carreira</h2>
+          <p>No Burger McKing's, acreditamos no potencial de cada colaborador. Oferecemos programas de treinamento e desenvolvimento para ajudá-lo a alcançar seus objetivos profissionais.</p>
+          <ul class="career-paths">
+            <li>Programa de Trainee</li>
+            <li>Cursos de Liderança</li>
+            <li>Rotação de Funções</li>
+            <li>Mentoria</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Qual é o processo de seleção?</h3>
+            <p>Nosso processo inclui análise de currículo, entrevista inicial, dinâmica em grupo e entrevista final.</p>
+          </div>
+          <!-- Adicionar mais perguntas e respostas aqui -->
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

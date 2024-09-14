@@ -1,0 +1,85 @@
+/* Estilos específicos para a página de Cupons */
+
+.coupons-section {
+    padding: 60px 0;
+    background-color: var(--secondary-color);
+}
+
+.coupon-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.coupon-item {
+    background-color: var(--white);
+    border: 2px dashed var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coupon-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-item h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.coupon-item .discount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 15px 0;
+}
+
+.coupon-item .description {
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.coupon-item .code {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.coupon-item .expiry {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b51e00;
+}
+
+@media (max-width: 768px) {
+    .coupon-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}

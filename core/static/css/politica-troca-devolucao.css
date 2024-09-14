@@ -1,0 +1,111 @@
+/* Estilos específicos para a página Política de Troca e Devolução */
+
+.policy-section {
+    background-color: var(--white);
+    padding: 60px 0;
+}
+
+.policy-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.policy-item {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.policy-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.policy-item i {
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.policy-item h3 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.policy-item p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.details-section {
+    background-color: var(--secondary-color);
+    padding: 60px 0;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background-color: var(--white);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-item h3 {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 15px 20px;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-item h3.active {
+    background-color: var(--accent-color);
+}
+
+.accordion-item h3 i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-item h3.active i {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 20px;
+    display: none;
+}
+
+.contact-section {
+    background-color: var(--white);
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .policy-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .policy-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}

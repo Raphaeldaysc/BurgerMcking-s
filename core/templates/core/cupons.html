@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupons - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/cupons.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Cupons de Desconto</h1>
+          <p class="promo-text">Economize em suas refeições favoritas!</p>
+          <p>Confira nossas ofertas exclusivas e aproveite descontos incríveis.</p>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Cupons" class="hero-image" />
+      </section>
+
+      <section class="coupons-section">
+        <div class="container">
+          <h2>Cupons Disponíveis</h2>
+          <div class="coupon-items">
+            <div class="coupon-item">
+              <h3>Whopper Duplo</h3>
+              <p class="discount">30% OFF</p>
+              <p class="description">Compre um Whopper Duplo com 30% de desconto!</p>
+              <p class="code">WHOPPERDUPLO30</p>
+              <p class="expiry">Válido até 31/12/2024</p>
+              <button class="cta-button">Usar Cupom</button>
+            </div>
+            <div class="coupon-item">
+              <h3>Combo Família</h3>
+              <p class="discount">R$15 OFF</p>
+              <p class="description">Economize R$15 no Combo Família!</p>
+              <p class="code">FAMILIA15</p>
+              <p class="expiry">Válido até 31/12/2024</p>
+              <button class="cta-button">Usar Cupom</button>
+            </div>
+            <div class="coupon-item">
+              <h3>Sobremesa Grátis</h3>
+              <p class="discount">100% OFF</p>
+              <p class="description">Ganhe uma sobremesa na compra de um combo!</p>
+              <p class="code">SOBREMESAGRATIS</p>
+              <p class="expiry">Válido até 31/12/2024</p>
+              <button class="cta-button">Usar Cupom</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-to-use">
+        <div class="container">
+          <h2>Como Usar os Cupons</h2>
+          <ol>
+            <li>Escolha o cupom desejado</li>
+            <li>Clique em "Usar Cupom"</li>
+            <li>Copie o código do cupom</li>
+            <li>Faça seu pedido no app ou site</li>
+            <li>Cole o código na área de cupons antes de finalizar o pedido</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Posso usar mais de um cupom por pedido?</h3>
+            <p>Não, apenas um cupom pode ser utilizado por pedido.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Os cupons são válidos para delivery?</h3>
+            <p>Sim, a maioria dos cupons pode ser usada tanto para delivery quanto para retirada no restaurante.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Como faço para receber novos cupons?</h3>
+            <p>Baixe nosso app e cadastre-se no Clube McKing's para receber cupons exclusivos regularmente!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

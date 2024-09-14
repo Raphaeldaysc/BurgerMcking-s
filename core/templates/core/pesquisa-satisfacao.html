@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa de Satisfação - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/pesquisa-satisfacao.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Pesquisa de Satisfação</h1>
+          <p class="promo-text">Sua opinião é fundamental para nós!</p>
+          <p>Ajude-nos a melhorar ainda mais a sua experiência no Burger McKing's.</p>
+          <a href="#pesquisa" class="cta-button">Participar da Pesquisa</a>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Pesquisa de Satisfação" class="hero-image" />
+      </section>
+
+      <section id="pesquisa" class="secondary-section">
+        <div class="container">
+          <h2>Participe da Nossa Pesquisa</h2>
+          <p>Sua opinião nos ajuda a oferecer a melhor experiência possível.</p>
+          <div class="survey-info">
+            <div class="info-card">
+              <i class="fas fa-clock"></i>
+              <h3>Rápido e Fácil</h3>
+              <p>Leva apenas 5 minutos para completar nossa pesquisa</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-gift"></i>
+              <h3>Ganhe Recompensas</h3>
+              <p>Chance de ganhar cupons e descontos exclusivos</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-comments"></i>
+              <h3>Feedback Valioso</h3>
+              <p>Suas sugestões são essenciais para nossa melhoria contínua</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights-section">
+        <div class="container">
+          <h2>Por que sua opinião importa</h2>
+          <div class="highlights-list">
+            <div class="highlight-item">
+              <i class="fas fa-users"></i>
+              <div class="value-highlight">1 Milhão+</div>
+              <div class="value-description">Clientes Satisfeitos</div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-star"></i>
+              <div class="value-highlight">4.8/5</div>
+              <div class="value-description">Avaliação Média</div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-clipboard-check"></i>
+              <div class="value-highlight">98%</div>
+              <div class="value-description">Recomendação</div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-chart-line"></i>
+              <div class="value-highlight">30%</div>
+              <div class="value-description">Melhoria Anual</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos clientes dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="{{cliente.img.url}}" alt="{{cliente.nome}}" class="testimonial-image">
+              <p>"O Burger McKing's sempre supera minhas expectativas. O atendimento é excelente e os hambúrgueres são incomparáveis!"</p>
+              <p class="testimonial-name">- {{cliente.nome}}, Cliente Fiel</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+
+      <section class="survey-process">
+        <div class="container">
+          <h2>Como Participar</h2>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h3>Acesse</h3>
+              <p>Clique no botão para iniciar a pesquisa</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h3>Responda</h3>
+              <p>Preencha o questionário honestamente</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h3>Envie</h3>
+              <p>Submeta suas respostas ao final</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h3>Receba</h3>
+              <p>Ganhe sua recompensa por participar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Quanto tempo leva para completar a pesquisa?</h3>
+            <p>Nossa pesquisa é projetada para ser rápida e fácil, levando em média 5 minutos para ser concluída.</p>
+          </div>
+          <!-- Adicionar mais perguntas e respostas aqui -->
+        </div>
+      </section>
+    </main>
+
+{% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

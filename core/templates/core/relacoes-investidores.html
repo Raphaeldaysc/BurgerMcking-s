@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relações com Investidores - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/relacoes-investidores.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Relações com Investidores</h1>
+          <p class="promo-text">Invista no futuro da alimentação global!</p>
+          <p>Descubra as oportunidades de investimento na empresa mais valiosa do mundo.</p>
+          <a href="#informacoes" class="cta-button">Ver Informações Financeiras</a>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Relações com Investidores" class="hero-image" />
+      </section>
+
+      <section id="informacoes" class="secondary-section">
+        <div class="container">
+          <h2>Informações para Investidores</h2>
+          <p>Explore nossos resultados financeiros recordes e relatórios de crescimento exponencial.</p>
+          <div class="investor-info">
+            <div class="info-card">
+              <i class="fas fa-chart-line"></i>
+              <h3>Relatórios Financeiros</h3>
+              <p>Acesse nossos relatórios trimestrais e anuais de crescimento sem precedentes</p>
+              <a href="#" class="cta-button">Ver Relatórios</a>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-newspaper"></i>
+              <h3>Comunicados</h3>
+              <p>Fique por dentro das últimas notícias sobre nossas aquisições bilionárias</p>
+              <a href="#" class="cta-button">Ver Comunicados</a>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-calendar-alt"></i>
+              <h3>Eventos</h3>
+              <p>Participe dos nossos eventos exclusivos para investidores de alto padrão</p>
+              <a href="#" class="cta-button">Ver Eventos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights-section">
+        <div class="container">
+          <h2>Destaques Financeiros</h2>
+          <div class="highlights-list">
+            <div class="highlight-item">
+              <i class="fas fa-dollar-sign"></i>
+              <div class="value-highlight">$987 Bilhões</div>
+              <div class="value-description">Receita Anual</div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-store"></i>
+              <div class="value-highlight">250.000+</div>
+              <div class="value-description">Restaurantes Globalmente</div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-globe"></i>
+              <div class="value-highlight">195</div>
+              <div class="value-description">Países com Presença</div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-chart-pie"></i>
+              <div class="value-highlight">42%</div>
+              <div class="value-description">Crescimento Anual</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que os analistas dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="{{analista.img.url}}" alt="{{analista.nome}}" class="testimonial-image">
+              <p>"A Burger McKing's demonstra um crescimento consistente e uma estratégia sólida de expansão global."</p>
+              <p class="testimonial-name">- {{analista.nome}}, Analista Financeiro</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+
+      <section class="investment-process">
+        <div class="container">
+          <h2>Como Investir</h2>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h3>Pesquisa</h3>
+              <p>Analise nossos relatórios e desempenho</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h3>Consulta</h3>
+              <p>Fale com seu consultor financeiro</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h3>Decisão</h3>
+              <p>Escolha a melhor opção de investimento</p>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h3>Investimento</h3>
+              <p>Realize seu investimento na Burger McKing's</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Como posso comprar ações da Burger McKing's?</h3>
+            <p>As ações da Burger McKing's podem ser adquiridas através de corretoras de valores. Consulte seu consultor financeiro para mais informações.</p>
+          </div>
+          <!-- Adicionar mais perguntas e respostas aqui -->
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

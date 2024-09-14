@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Troca e Devolução - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/politica-troca-devolucao.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Política de Troca e Devolução</h1>
+          <p class="promo-text">Sua satisfação é nossa prioridade</p>
+          <p>Conheça nossa política de troca e devolução para garantir a melhor experiência</p>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Troca e Devolução" class="hero-image" />
+      </section>
+
+      <section class="policy-section">
+        <div class="container">
+          <h2>Nossa Política de Troca e Devolução</h2>
+          <div class="policy-content">
+            <div class="policy-item">
+              <i class="fas fa-undo-alt"></i>
+              <h3>Devolução Rápida</h3>
+              <p>Processo simplificado para devoluções em até 30 minutos após a compra.</p>
+            </div>
+            <div class="policy-item">
+              <i class="fas fa-exchange-alt"></i>
+              <h3>Troca Garantida</h3>
+              <p>Troque seu produto por outro de igual valor em caso de insatisfação.</p>
+            </div>
+            <div class="policy-item">
+              <i class="fas fa-headset"></i>
+              <h3>Suporte Dedicado</h3>
+              <p>Nossa equipe está pronta para auxiliar em todo o processo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details-section">
+        <div class="container">
+          <h2>Detalhes da Política</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h3>Prazo para Troca <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Aceitamos trocas em até 30 minutos após a compra, desde que o produto não tenha sido consumido.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3>Condições para Devolução <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Para devoluções, o produto deve estar intacto e acompanhado da nota fiscal. Reembolsos serão processados na mesma forma de pagamento original.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3>Exceções <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Produtos personalizados ou em promoções especiais podem ter políticas de troca e devolução diferenciadas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <h2>Precisa de Ajuda?</h2>
+          <p>Entre em contato com nossa equipe de atendimento ao cliente:</p>
+          <a href="fale-conosco.html" class="cta-button">Fale Conosco</a>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

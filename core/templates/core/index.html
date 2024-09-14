@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger McKing's Brasil</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/index.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+{% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>PROVE A REALEZA!</h1>
+          <p class="promo-text">Novo King Supreme: O Rei dos Sabores!</p>
+          <p>Experimente o sanduíche que vai coroar o seu paladar.</p>
+          <a href="#" class="cta-button">Peça Agora</a>
+        </div>
+        <img src="{% static "assets/king_Supreme.png" %}" alt="King Supreme" class="hero-image" />
+      </section>
+
+      <section id="destaques" class="secondary-section">
+        <div class="container">
+          <h2>Destaques do Cardápio</h2>
+          <p>Conheça nossas opções mais populares e irresistíveis.</p>
+          <div class="menu-highlights">
+            <div class="menu-item">
+              <i class="fas fa-hamburger"></i>
+              <h3>Whopper</h3>
+              <p>O clássico que todos amam</p>
+              <a href="#" class="cta-button">Peça Agora</a>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-drumstick-bite"></i>
+              <h3>Chicken Royale</h3>
+              <p>Frango crocante e suculento</p>
+              <a href="#" class="cta-button">Peça Agora</a>
+            </div>
+            <div class="menu-item">
+              <i class="fas fa-cheese"></i>
+              <h3>Cheeseburger Duplo</h3>
+              <p>Duas vezes mais sabor</p>
+              <a href="#" class="cta-button">Peça Agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="container">
+          <h2>Baixe nosso App e tenha o McKing's na palma da sua mão!</h2>
+          <div class="app-features">
+            <div class="feature-item">
+              <i class="fas fa-percent"></i>
+              <h3>Ofertas Exclusivas</h3>
+              <p>Descontos especiais só para usuários do app</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Pedido Fácil</h3>
+              <p>Faça seu pedido com poucos cliques</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-gift"></i>
+              <h3>Programa de Fidelidade</h3>
+              <p>Acumule pontos e ganhe recompensas</p>
+            </div>
+          </div>
+          <div class="app-download">
+            <a href="#"><p class="cta-button">IOS</p></a>
+            <a href="#"><p class="cta-button">Android</p></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos clientes dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="{{cliente.img.url}}" alt="{{cliente.nome}}" class="testimonial-image">
+              <p>"{{cliente.avaliacao}}"</p>
+              <p class="testimonial-name">- {{cliente.nome}}, Cliente Fiel</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="{% static "js/script.js" %}"></script>
+  </body>
+</html>

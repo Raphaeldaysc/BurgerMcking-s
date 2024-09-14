@@ -1,0 +1,162 @@
+/* Estilos específicos para a página Relações com Investidores */
+
+.investor-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.info-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.info-card i {
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.highlights-section {
+    background-color: var(--accent-color);
+    padding: 80px 0;
+    color: var(--white);
+}
+
+.highlights-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.highlight-item {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: scale(1.05);
+}
+
+.highlight-item i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.highlight-item span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: block;
+}
+
+.testimonials-section {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+
+.testimonial {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid var(--accent-color);
+}
+
+.investment-process {
+    padding: 80px 0;
+}
+
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.process-step {
+    text-align: center;
+    width: 220px;
+}
+
+.process-step .step-number {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--white);
+    display: inline-block;
+    font-size: 2rem;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    width: 60px;
+}
+
+.faq-section {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+
+.faq-item {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Estilos para valores exorbitantes */
+.value-highlight {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.value-description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}

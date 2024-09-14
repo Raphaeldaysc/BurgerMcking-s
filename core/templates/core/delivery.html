@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/delivery.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Delivery McKing's</h1>
+          <p class="promo-text">Seu lanche favorito entregue na sua casa!</p>
+          <p>Peça agora e receba seu pedido quentinho e saboroso.</p>
+          <a href="#pedido" class="cta-button">Fazer Pedido</a>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Delivery" class="hero-image" />
+      </section>
+
+      <section id="pedido" class="order-section">
+        <div class="container">
+          <h2>Como Fazer seu Pedido</h2>
+          <div class="order-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Escolha os Itens</h3>
+              <p>Selecione seus produtos favoritos</p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Adicione ao Carrinho</h3>
+              <p>Revise seu pedido</p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Informe o Endereço</h3>
+              <p>Digite o local de entrega</p>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <h3>Pague e Confirme</h3>
+              <p>Escolha o método de pagamento</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="delivery-options">
+        <div class="container">
+          <h2>Opções de Entrega</h2>
+          <div class="options-list">
+            <div class="option-item">
+              <i class="fas fa-motorcycle"></i>
+              <h3>Entrega Padrão</h3>
+              <p>Receba em até 45 minutos</p>
+            </div>
+            <div class="option-item">
+              <i class="fas fa-running"></i>
+              <h3>Entrega Expressa</h3>
+              <p>Receba em até 30 minutos</p>
+            </div>
+            <div class="option-item">
+              <i class="fas fa-store"></i>
+              <h3>Retirada na Loja</h3>
+              <p>Busque seu pedido em 15 minutos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="delivery-map">
+        <div class="container">
+          <h2>Área de Entrega</h2>
+            <img src="{% static "assets/maps.png" %}" alt="mps" />
+          <p>Verifique se seu endereço está dentro da nossa área de entrega</p>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Qual é a área de entrega?</h3>
+            <p>Entregamos em um raio de até 5km de nossas lojas.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Posso agendar uma entrega?</h3>
+            <p>Sim, você pode agendar entregas com até 24 horas de antecedência.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Como acompanho meu pedido?</h3>
+            <p>Você pode acompanhar o status do seu pedido em tempo real pelo nosso app.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

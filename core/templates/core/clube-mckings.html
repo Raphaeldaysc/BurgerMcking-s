@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clube McKing's - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/clube-mckings.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Clube McKing's</h1>
+          <p class="promo-text">Seja um membro da realeza!</p>
+          <p>Junte-se ao nosso clube de fidelidade e desfrute de benefícios exclusivos.</p>
+          <a href="#cadastro" class="cta-button">Cadastre-se Agora</a>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Clube McKing's" class="hero-image" />
+      </section>
+
+      <section class="benefits-section">
+        <div class="container">
+          <h2>Benefícios do Clube</h2>
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <i class="fas fa-percent"></i>
+              <h3>Descontos Exclusivos</h3>
+              <p>Ofertas especiais só para membros do clube</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-gift"></i>
+              <h3>Brindes Surpresa</h3>
+              <p>Receba brindes especiais em datas comemorativas</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-star"></i>
+              <h3>Acesso Antecipado</h3>
+              <p>Seja o primeiro a experimentar novos produtos</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-birthday-cake"></i>
+              <h3>Presente de Aniversário</h3>
+              <p>Ganhe um lanche especial no seu aniversário</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cadastro" class="signup-section">
+        <div class="container">
+          <h2>Como se Cadastrar</h2>
+          <div class="signup-steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Baixe o App</h3>
+              <p>Disponível para iOS e Android</p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Crie sua Conta</h3>
+              <p>Preencha seus dados pessoais</p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Ative o Clube</h3>
+              <p>Aceite os termos do programa de fidelidade</p>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <h3>Aproveite</h3>
+              <p>Comece a desfrutar dos benefícios exclusivos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos membros dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="{{usuario.img.url}}" alt="{{usuario.nome}}" class="testimonial-image">
+              <p>"{{clube.avaliacaoClube}}"</p>
+              <p class="testimonial-name">- {{usuario.nome}}, Membro do Clube</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>O Clube McKing's é gratuito?</h3>
+            <p>Sim, a participação no Clube McKing's é totalmente gratuita.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Como acumulo pontos?</h3>
+            <p>Você acumula pontos a cada compra realizada em nossas lojas ou pelo app.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Os pontos expiram?</h3>
+            <p>Os pontos têm validade de 12 meses a partir da data de acúmulo.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

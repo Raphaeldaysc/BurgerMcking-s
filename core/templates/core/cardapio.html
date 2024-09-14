@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/cardapio.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+  {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Nosso Cardápio</h1>
+          <p class="promo-text">Descubra sabores incríveis!</p>
+          <p>Explore nossa variedade de hambúrgueres, acompanhamentos e sobremesas.</p>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Cardápio" class="hero-image" />
+      </section>
+
+      <section class="menu-section">
+        <div class="container">
+          <h2>Hambúrgueres</h2>
+          <div class="menu-items">
+{% for hmb in hmb %}
+            <div class="menu-item">
+              <img src="{{hmb.img.url}}" alt="{{hmb.nome}}" />
+              <h3>{{hmb.nome}}</h3>
+              <p>{{hmb.descricao}}</p>
+              <p class="price">R$ {{hmb.preco}}</p>
+              <button class="cta-button">Adicionar ao Carrinho</button>
+            </div>{% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <div class="container">
+          <h2>Acompanhamentos</h2>
+          <div class="menu-items">
+          {% for frie in fries %}
+            <div class="menu-item">
+              <img src="{{frie.img.url}}" alt="{{frie.nome}}" />
+              <h3>{{frie.nome}}</h3>
+              <p>{{frie.descricao}}</p>
+              <p class="price">R$ {{frie.preco}}</p>
+              <button class="cta-button">Adicionar ao Carrinho</button>
+            </div>{% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <div class="container">
+          <h2>Sobremesas</h2>
+          <div class="menu-items">
+          {% for sobremesa in sobremesas %}
+            <div class="menu-item">
+              <img src="{{sobremesa.img.url}}" alt="{{sobremesa.nome}}" />
+              <h3>{{sobremesa.nome}}</h3>
+              <p>{{sobremesa.descricao}}</p>
+              <p class="price">R$ {{sobremesa.preco}}</p>
+              <button class="cta-button">Adicionar ao Carrinho</button>
+            </div>{% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>Vocês têm opções vegetarianas?</h3>
+            <p>Sim, oferecemos hambúrgueres vegetarianos e veganos em nosso cardápio.</p>
+          </div>
+          <div class="faq-item">
+            <h3>É possível personalizar os pedidos?</h3>
+            <p>Claro! Você pode adicionar ou remover ingredientes conforme sua preferência.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Qual o prazo de entrega para delivery?</h3>
+            <p>Nosso prazo médio de entrega é de 30 a 45 minutos, dependendo da sua localização.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

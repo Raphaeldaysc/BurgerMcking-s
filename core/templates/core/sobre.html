@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Nossa História</h1>
+          <p class="promo-text">Conheça a trajetória do Burger McKing's</p>
+          <p>De um pequeno restaurante a uma das maiores redes de fast food do mundo.</p>
+        </div>
+        <img src="{% static "assets/restaurante.png" %}" alt="Nosso Restaurante" class="hero-image" />
+      </section>
+
+      <section id="nossa-historia" class="secondary-section">
+        <div class="container">
+          <h2>Como tudo começou</h2>
+          <div class="history-content">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-burger"></i>
+                </div>
+                <div class="timeline-content">
+                  <h3>1954 - O Nascimento</h3>
+                  <p>
+                    Os irmãos Dick e Mac McKing abrem o primeiro restaurante em San Bernardino, Califórnia. 
+                    Inspirados pelos drive-ins da época, eles revolucionam o conceito de fast food com um 
+                    menu simplificado e um sistema de produção eficiente.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <div class="timeline-content">
+                  <h3>1967 - A Expansão</h3>
+                  <p>
+                    James McLamore, um empreendedor visionário, fica impressionado com o conceito e decide 
+                    expandir a marca. Ele introduz o icônico Whopper, que se torna um sucesso instantâneo 
+                    e ajuda a impulsionar a expansão nacional da rede.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="timeline-content">
+                  <h3>Anos 70 - Internacionalização</h3>
+                  <p>
+                    A Burger McKing's inicia sua expansão internacional, levando o sabor americano para 
+                    diversos países. Esta década marca o início de uma jornada global que transformaria 
+                    a marca em uma das maiores redes de fast food do mundo.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="timeline-content">
+                  <h3>Hoje - Um Império Global</h3>
+                  <p>
+                    Com milhares de restaurantes em mais de 100 países, a Burger McKing's se estabeleceu 
+                    como uma das maiores e mais amadas redes de fast food do mundo, sempre mantendo o 
+                    compromisso com a qualidade e inovação que a tornou famosa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="values-section">
+        <div class="container">
+          <h2>Nossos Valores</h2>
+          <div class="values-content">
+            <div class="value-item">
+              <i class="fas fa-check-circle"></i>
+              <h3>Qualidade</h3>
+              <p>Comprometidos com os melhores ingredientes e processos.</p>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-lightbulb"></i>
+              <h3>Inovação</h3>
+              <p>Sempre buscando novas formas de surpreender nossos clientes.</p>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-heart"></i>
+              <h3>Satisfação do Cliente</h3>
+              <p>Nosso objetivo é proporcionar a melhor experiência possível.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

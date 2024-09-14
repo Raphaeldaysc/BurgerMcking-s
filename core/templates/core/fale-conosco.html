@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fale Conosco - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/fale-conosco.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>FALE CONOSCO</h1>
+          <p class="promo-text">Sua opinião é muito importante para nós!</p>
+          <p>Estamos aqui para ouvir suas sugestões, elogios ou reclamações.</p>
+          <a href="#contato" class="cta-button">Entre em Contato</a>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Fale Conosco" class="hero-image" />
+      </section>
+
+      <section id="contato" class="secondary-section">
+        <div class="container">
+          <h2>Como podemos ajudar?</h2>
+          <p>Escolha a melhor forma de entrar em contato conosco.</p>
+          <div class="contact-options">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <h3>Telefone</h3>
+              <p>0800 123 4567</p>
+              <p>Seg. a Sex. 9h às 18h</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <h3>E-mail</h3>
+              <p>contato@mcking.com</p>
+              <p>Resposta em até 24h</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-comment"></i>
+              <h3>Chat Online</h3>
+              <p>Disponível 24/7</p>
+              <a href="#" class="cta-button">Iniciar Chat</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="container">
+          <h2>Envie sua mensagem</h2>
+          <form id="contact-form">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto:</label>
+              <select id="subject" name="subject" required>
+                <option value="">Selecione um assunto</option>
+                <option value="elogio">Elogio</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Enviar Mensagem</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos clientes dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="cliente1.jpg" alt="Cliente 1" class="testimonial-image">
+              <p>"O atendimento do McKing's é excelente! Sempre resolvem minhas questões rapidamente."</p>
+              <p class="testimonial-name">- Carlos Oliveira, Cliente Satisfeito</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

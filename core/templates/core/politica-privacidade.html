@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/politica-privacidade.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Política de Privacidade</h1>
+          <p class="promo-text">Sua privacidade é importante para nós</p>
+          <p>Saiba como protegemos e utilizamos seus dados pessoais</p>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="Privacidade" class="hero-image" />
+      </section>
+
+      <section class="policy-section">
+        <div class="container">
+          <h2>Nossa Política de Privacidade</h2>
+          <div class="policy-content">
+            <div class="policy-item">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Proteção de Dados</h3>
+              <p>Utilizamos tecnologia de ponta para proteger suas informações pessoais.</p>
+            </div>
+            <div class="policy-item">
+              <i class="fas fa-user-lock"></i>
+              <h3>Controle do Usuário</h3>
+              <p>Você tem controle sobre seus dados e pode solicitar acesso ou exclusão a qualquer momento.</p>
+            </div>
+            <div class="policy-item">
+              <i class="fas fa-handshake"></i>
+              <h3>Transparência</h3>
+              <p>Somos transparentes sobre como coletamos e utilizamos seus dados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="details-section">
+        <div class="container">
+          <h2>Detalhes da Política</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h3>Coleta de Dados <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Coletamos dados quando você utiliza nosso site, aplicativo ou visita nossas lojas. Isso inclui informações de contato, preferências de pedido e dados de uso.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3>Uso de Dados <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Utilizamos seus dados para melhorar nossos serviços, personalizar sua experiência e enviar comunicações relevantes sobre promoções e novidades.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3>Compartilhamento de Dados <i class="fas fa-chevron-down"></i></h3>
+              <div class="accordion-content">
+                <p>Não vendemos seus dados pessoais. Compartilhamos apenas com parceiros confiáveis que nos ajudam a fornecer nossos serviços.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <h2>Dúvidas sobre Privacidade?</h2>
+          <p>Entre em contato com nosso Encarregado de Proteção de Dados:</p>
+          <a href="mailto:privacidade@mcking.com" class="cta-button">Enviar E-mail</a>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>

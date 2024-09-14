@@ -1,0 +1,137 @@
+/* Estilos específicos para a página inicial */
+
+.menu-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.menu-item {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item i {
+    color: var(--primary-color);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.menu-item p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.app-section {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+}
+
+.app-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 250px;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.app-download {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.app-download a {
+    margin: 0 10px;
+}
+
+.app-preview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.testimonials-section {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+.testimonial {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid var(--accent-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-highlights, .app-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item, .feature-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .app-download {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-download a {
+        margin: 10px 0;
+    }
+}

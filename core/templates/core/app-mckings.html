@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App McKing's - Burger McKing's</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/app-mckings.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>App McKing's</h1>
+          <p class="promo-text">Peça seu lanche favorito com apenas alguns cliques!</p>
+          <p>Baixe agora e aproveite ofertas exclusivas, pedidos personalizados e muito mais.</p>
+          <div class="app-download">
+                        <a href="#"><p class="cta-button">IOS</p></a>
+            <a href="#"><p class="cta-button">Android</p></a>
+          </div>
+        </div>
+        <img src="{% static "assets/th.png" %}" alt="App McKing's" class="hero-image" />
+      </section>
+
+      <section class="features-section">
+        <div class="container">
+          <h2>Recursos do App</h2>
+          <div class="feature-items">
+            <div class="feature-item">
+              <i class="fas fa-percent"></i>
+              <h3>Ofertas Exclusivas</h3>
+              <p>Acesse promoções disponíveis apenas para usuários do app.</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Pedido Fácil</h3>
+              <p>Faça seu pedido com poucos cliques e personalize como quiser.</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Localização de Lojas</h3>
+              <p>Encontre a loja McKing's mais próxima de você.</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-gift"></i>
+              <h3>Programa de Fidelidade</h3>
+              <p>Acumule pontos e ganhe recompensas a cada pedido.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-to-use">
+        <div class="container">
+          <h2>Como Usar o App</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Baixe o App</h3>
+              <p>Disponível para iOS e Android</p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Crie sua conta</h3>
+              <p>Cadastre-se rapidamente</p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Escolha seus itens</h3>
+              <p>Navegue pelo cardápio completo</p>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <h3>Faça seu pedido</h3>
+              <p>Para retirada ou entrega</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <h2>O que nossos usuários dizem</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial">
+              <img src="user1.jpg" alt="Usuário 1" class="testimonial-image">
+              <p>"O app do McKing's é super fácil de usar. Faço meus pedidos em segundos!"</p>
+              <p class="testimonial-name">- Ana Silva, Usuária do App</p>
+            </div>
+            <!-- Adicionar mais depoimentos aqui -->
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2>Perguntas Frequentes</h2>
+          <div class="faq-item">
+            <h3>O app é gratuito?</h3>
+            <p>Sim, o app McKing's é totalmente gratuito para download e uso.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Posso pagar pelo app?</h3>
+            <p>Sim, o app oferece diversas opções de pagamento seguras e práticas.</p>
+          </div>
+          <div class="faq-item">
+            <h3>As ofertas do app são as mesmas das lojas físicas?</h3>
+            <p>O app possui ofertas exclusivas além das promoções disponíveis nas lojas físicas.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {% include "partials/footer.html" %}
+    <script src="script.js"></script>
+  </body>
+</html>
